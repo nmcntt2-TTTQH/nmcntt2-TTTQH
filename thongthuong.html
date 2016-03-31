@@ -3,43 +3,43 @@
   <head>
     <style>
       #flippy {
-    text-align: center;
-}
+      text-align: center;
+      }
 
-#flippy button {
-    background: #aa65c7;
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
-    border: none;
-    border-radius: 3px;
-    padding: 8px 16px;
-    margin: 10px auto;
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 0px 3px 0px 0px #883da7;
-    vertical-align: middle;
-    cursor: pointer;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-    transition: background 0.1s ease-in-out;
-}
+      #flippy button {
+      background: #aa65c7;
+      color: #fff;
+      text-align: center;
+      margin: 0 auto;
+      border: none;
+      border-radius: 3px;
+      padding: 8px 16px;
+      margin: 10px auto;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0px 3px 0px 0px #883da7;
+      vertical-align: middle;
+      cursor: pointer;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+      transition: background 0.1s ease-in-out;
+      }
 
-#flippy button:hover, #flippy button:focus {
-    background: #9e4fbf;
-    outline: none;
-}
+      #flippy button:hover, #flippy button:focus {
+      background: #9e4fbf;
+      outline: none;
+      }
 
-#flippanel {
-    padding: 1px;
-    text-align: left;
-    background: #f5f5f5;
-    border: 0px;
-}
+      #flippanel {
+      padding: 1px;
+      text-align: left;
+      background: #f5f5f5;
+      border: 0px;
+      }
 
-#flippanel {
-    padding: 24px;
-    display: none;
-}
+      #flippanel {
+      padding: 24px;
+      display: none;
+      }
     </style>
     
     <meta charset="UTF-8">
@@ -51,6 +51,13 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
+    <script>
+      $(document).ready(function() {
+      $("#flippy").click(function() {
+      $("#flippanel").slideToggle("normal");
+      });
+      });
+    </script>
     <section class="page-header">
        <a href="/nmcntt2-TTTQH"><img src="/nmcntt2-TTTQH/images/logo.png"></a>
       <h2 class="project-tagline"><font size = "5"><strong>Nhập môn công nghệ thông tin 2 - Nhóm TTTQH</strong></font></h2>
@@ -93,12 +100,6 @@ chi tiết về sự kiện</p></font>
 
     </section>
 
-  <script>
-$(document).ready(function() {
- $("#flippy").click(function() {
- $("#flippanel").slideToggle("normal");
- });
-});
-</script>
+
   </body>
 </html>
