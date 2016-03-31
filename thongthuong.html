@@ -1,6 +1,47 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <style>
+      #flippy {
+    text-align: center;
+}
+
+#flippy button {
+    background: #aa65c7;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    margin: 10px auto;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 3px 0px 0px #883da7;
+    vertical-align: middle;
+    cursor: pointer;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    transition: background 0.1s ease-in-out;
+}
+
+#flippy button:hover, #flippy button:focus {
+    background: #9e4fbf;
+    outline: none;
+}
+
+#flippanel {
+    padding: 1px;
+    text-align: left;
+    background: #f5f5f5;
+    border: 0px;
+}
+
+#flippanel {
+    padding: 24px;
+    display: none;
+}
+    </style>
+    
     <meta charset="UTF-8">
     <title>.: Trang chủ - Nhóm 2 - THNMCNTT2 :. </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +72,10 @@
 <font size = "5" face="Times New Roman"><p>Truy cập các nguồn tin để dò tìm tin tức. Theo khảo sát, mọi người thường dùng nhiều nguồn tin để tìm kiếm 
 về các hoạt động nhưng chủ yếu là Facebook và Bạn bè. </p></font>
 
-
+<div id="flippy"><button>Cekidot</button></div>
+<div id="flippanel">
+Nội dung
+</div>
 <font size = "5" face="Times New Roman" color="blue"><p><b>Bước 3: </b></p></font>
 <font size = "5" face="Times New Roman"><p>Khi tìm được một hoạt động, người dùng sẽ tìm kiếm thông tin về hoạt động (địa điểm tổ chức, thời gian, phương tiện giao thông, … ) 
 rồi đánh dấu lại hoạt động nếu cảm thấy cần thiết. Nếu cảm thấy đầy đủ sẽ chuyển qua bước 4, nếu chưa thì quay lại bước 2.</p></font>
@@ -49,6 +93,12 @@ chi tiết về sự kiện</p></font>
 
     </section>
 
-  
+  <script>
+$(document).ready(function() {
+ $("#flippy").click(function() {
+ $("#flippanel").slideToggle("normal");
+ });
+});
+</script>
   </body>
 </html>
